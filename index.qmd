@@ -8,11 +8,14 @@ about:
     - text: LinkedIn
       href: https://www.linkedin.com/in/shunji-shimoyoshi/
       target: _blank
+      icon: "linkedin"
     - text: GitHub
       href: https://github.com/ShunjiShimo
       target: _blank
+      icon: "github"
     - text: Email
-      href: mailto:sshimoyoshi@ucsb.edu or mailto:shunji.shimo@gmail.com
+      href: mailto:sshimoyoshi@ucsb.edu
+      icon: "envelope-at"
 ---
 
 Hello! My name is Shunji Shimoyoshi and this is my personal website/portfolio. Here, I have listed some of my academic skills and experiences I gained through my time in college as well as activities and communities I have been involved in outside of the classroom.
