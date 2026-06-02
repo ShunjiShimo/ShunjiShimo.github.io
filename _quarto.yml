@@ -15,8 +15,10 @@ website:
 
 format:
   html:
-    theme: lumen
-    css: styles.css
+    theme:
+      - lumen
+      - styles.scss
+    mainfont: Gelasio
     toc: true
     page-layout: full
 
