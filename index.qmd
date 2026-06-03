@@ -1,6 +1,6 @@
 ---
 title: "Shunji Shimoyoshi"
-#image:
+image: D:\ENVS-193DS\Github\ShunjiShimo.github.io\pictures\headshot.jpg
 toc: false
 about:
   template: trestles
