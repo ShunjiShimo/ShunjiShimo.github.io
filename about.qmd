@@ -43,7 +43,7 @@ Closer to home, Lake Tahoe represents what I love about California and why I am 
 
 # Communities I'm Involved In
 
-::: {layout-ncol=1}
+::: {layout-ncol=2}
 ![UCSB NSU Culture Night 2026 *Kibou*](pictures/nsu-cn-photo-2.jpg)
 
 ![I played piano in a chamber group during this year's Culture Night *Kibou*!](pictures/nsu-cn-photo-1.jpg)

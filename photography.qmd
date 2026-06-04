@@ -1,4 +1,44 @@
 ---
 title: "Photography"
+toc: true
+toc-title: "Galleries"
+lightbox:
+  match: auto
+  loop: false
 ---
 
+One of my hobbies in recent years has been photography. While I am definitely an amateur in this field still, I hope to keep on improving my skills by simply going out and taking more pictures.
+
+These are some photo galleries of the life around UCSB. I find it fun and interesting to document even a fraction of all of the things that happen and live here.
+
+# Wildlife
+
+::: {layout-ncol=2}
+![Seagull on Sands](pictures/wildlife-photo-7.jpg){group="wildlife-gallery"}
+
+![An Unexpected Meeting](pictures/wildlife-photo-5.jpg){group="wildlife-gallery"}
+
+![8AM Section](pictures/wildlife-photo-2.jpg){group="wildlife-gallery"}
+
+![Quiet Reflection After a Midterm](pictures/wildlife-photo-3.jpg){group="wildlife-gallery"}
+:::
+
+# Plants
+
+::: {layout-ncol=2}
+![Common sunflower *Helianthus annuus*](pictures/plant-photo-1.jpg){group="plant-gallery"}
+
+![Bush sunflower *Encelia californica*](pictures/plant-photo-2.jpg){group="plant-gallery"}
+:::
+
+# Just IV things
+
+::: {layout-ncol=2}
+![IVPD Clamps Down on Halloween Celebrations](pictures/iv-photo-1.jpg){group="iv-gallery"}
+
+![Among the Kelp](pictures/iv-photo-2.jpg){group="iv-gallery"}
+
+![You Can't Park There, Mate!](pictures/iv-photo-4.jpg){group="iv-gallery"}
+
+![Leaning Tower of Manzanita](pictures/iv-photo-5.jpg){group="iv-gallery"}
+:::
