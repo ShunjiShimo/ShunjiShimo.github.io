@@ -1,0 +1,180 @@
+---
+title: "ENV S 193DS - Homework 3"
+toc: false
+description: "Homework 3 assignment for ENV S 193DS - Statistics for Environmental Science"
+author:
+  - name: Shunji Shimoyoshi
+    url: https://shunjishimo.github.io/
+date: 05-14-2026
+categories: [Quarto, R]
+image: preview-image-hw3.JPG
+draft: false
+---
+# About this Project
+
+This is my Homework 3 assignment for ENV S 193DS. In this assignment, I:
+
+* practiced using correlation tests to describe the relationship between two variables
+* worked on a personal data project and its effective visualization
+* worked on a creative and affective visualization of this data
+* practiced statistical critiques using an example paper
+
+The github repository for this assignment can be found [here](https://github.com/ShunjiShimo/ENVS-193DS_homework-03).
+
+# Code
+
+::: {.callout-tip collapse="true"}
+## Expand to view code
+
+```{r}
+#| label: reading in packages and data
+#| eval: false
+
+# reading in packages
+library(tidyverse)
+library(here)
+library(janitor)
+library(readxl)
+# creating new object from data set
+kelp <- read_csv(here("data","temp-kelp.csv"))
+bike <- read_csv(here("data","ENVS-193DS-Personal-Data-Project-cont.csv"))
+
+```
+
+```{r}
+#| label: visualizing data
+#| eval: false
+
+# base layer: ggplot
+ggplot(data = kelp, # data frame: kelp
+       # x-axis: temperature
+       # y-axis: kelp frond elongation rate
+       mapping = aes(x = temp_c,
+                     y = kelp_elong)) +
+  # first layer: points to represent individual observations
+  geom_point(color = "blue") + # using custom colors
+  # relabeling axes, adding title
+  labs(x = "Temperature (°C)", 
+       y = expression("Kelp frond elongation rate(cm day"^-1~")")) +
+  # changing theme
+  theme_light()
+
+```
+
+```{r}
+#| label: kelp qq plot
+#| eval: false
+
+# base layer: ggplot
+ggplot(data = kelp, # data frame: kelp
+       # y-axis for QQ plot (no x-axis for QQ plot)
+       aes(sample = kelp_elong)) + 
+  # first layer: QQ reference line
+  geom_qq_line(color = "blue") +
+  # second layer: QQ plot
+  geom_qq() +
+  # custom theme
+  theme_light()
+
+```
+
+```{r}
+#| label: correlation test for kelp model
+#| eval: false
+
+cor.test(kelp$kelp_elong, kelp$temp_c, # variables: kelp elongation rate and temperature
+         method = "pearson") # method: pearson's correlation (r)
+
+```
+
+```{r}
+#| label: kelp linear model
+#| eval: false
+
+kelp_model <- lm(
+  kelp_elong ~ temp_c, # formula: kelp elongation rate as a function of temperature
+  data = kelp # data frame: kelp
+)
+
+```
+
+```{r}
+#| label: checking assumptions of kelp model
+#| eval: false
+
+# display plots in a 2x2 grid
+par(mfrow = c(2, 2))
+# display diagnostic plots
+plot(kelp_model)
+
+```
+
+```{r}
+#| label: summary of kelp model
+#| eval: false
+
+# displaying result of kelp linear model
+summary(kelp_model)
+
+```
+
+```{r}
+#| label: visualizing personal data project
+#| eval: false
+
+# base layer: ggplot
+ggplot(data = bike, # data frame: bike
+       # x-axis: weather
+       # y-axis: Duration of bike ride
+       # coloring by weather
+       aes(x = Weather,
+           y = `Duration of bike ride (minutes)`,
+       color = Weather)) +
+  # first layer: boxplot
+  geom_boxplot() +
+ # relabeling the axes, adding title and subtitle
+  labs(x = "Wind Condition", 
+       y = "Duration of bike ride (minutes)",
+       title = "Biking in windy conditions increases the time spend biking",
+       subtitle = "Most recent observation: 5/23/2026") +
+ # custom theme
+  theme_light() +
+  # removing legend
+  theme(legend.position = "none") + 
+  # changing the color
+  scale_color_manual(values = c("calm" = "blue",
+                                "windy" = "red"))
+
+```
+
+```{r}
+#| label: visualizing personal data project 2
+#| eval: false
+
+# base layer: ggplot
+ggplot(data = bike, # data frame: bike
+       # x-axis: duration of day's activities
+       # y-axis: Duration of bike ride
+       aes(x = `Duration of day's activities (hours)`,
+           y = `Duration of bike ride (minutes)`,)) +
+  # first layer: points
+  geom_point(color = "firebrick") +
+ # relabeling the axes, adding title and subtitle
+  labs(x = "Duration of day's activities (hours)", 
+       y = "Duration of bike ride (minutes)",
+       title = "Daily Duration of Activities Effect on Time Spent Biking",
+       subtitle = "Most recent observation: 5/23/2026") +
+ # custom theme
+  theme_light() +
+  # removing legend
+  theme(legend.position = "none")
+
+```
+:::
+
+# Rendered Output
+
+<object data="ENVS-193DS_homework-03.pdf" type="application/pdf" width="100%" height="600px">
+<p>It appears your browser doesn't support embedded PDFs. 
+    You can <a href="ENVS-193DS_homework-03.pdf">click here to download the PDF file.</a></p>
+</object>
