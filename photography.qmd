@@ -14,13 +14,13 @@ These are some photo galleries of the life around UCSB. I find it fun and intere
 # Wildlife
 
 ::: {layout-ncol=2}
-![Seagull on Sands](pictures/wildlife-photo-7.jpg){group="wildlife-gallery"}
+!["Seagull on Sands"](pictures/wildlife-photo-7.jpg){group="wildlife-gallery"}
 
-![An Unexpected Meeting](pictures/wildlife-photo-5.jpg){group="wildlife-gallery"}
+!["An Unexpected Meeting"](pictures/wildlife-photo-5.jpg){group="wildlife-gallery"}
 
-![8AM Section](pictures/wildlife-photo-2.jpg){group="wildlife-gallery"}
+!["8AM Section"](pictures/wildlife-photo-2.jpg){group="wildlife-gallery"}
 
-![Quiet Reflection After a Midterm](pictures/wildlife-photo-3.jpg){group="wildlife-gallery"}
+!["Quiet Reflection After a Midterm"](pictures/wildlife-photo-3.jpg){group="wildlife-gallery"}
 :::
 
 # Plants
@@ -34,11 +34,11 @@ These are some photo galleries of the life around UCSB. I find it fun and intere
 # Just IV things
 
 ::: {layout-ncol=2}
-![IVPD Clamps Down on Halloween Celebrations](pictures/iv-photo-1.jpg){group="iv-gallery"}
+!["IVPD Clamps Down on Halloween Celebrations"](pictures/iv-photo-1.jpg){group="iv-gallery"}
 
-![Among the Kelp](pictures/iv-photo-2.jpg){group="iv-gallery"}
+!["Among the Kelp"](pictures/iv-photo-2.jpg){group="iv-gallery"}
 
-![You Can't Park There, Mate!](pictures/iv-photo-4.jpg){group="iv-gallery"}
+!["You Can't Park There, Mate!"](pictures/iv-photo-4.jpg){group="iv-gallery"}
 
-![Leaning Tower of Manzanita](pictures/iv-photo-5.jpg){group="iv-gallery"}
+!["Leaning Tower of Manzi"](pictures/iv-photo-5.jpg){group="iv-gallery"}
 :::
