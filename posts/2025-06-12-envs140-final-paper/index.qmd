@@ -11,7 +11,7 @@ categories: [Paper]
 image: preview-image-final-paper.JPG
 draft: false
 ---
-This was a final paper I worked on in ENV S 140 - Ecology and Management of Wildland Fire. In this paper, we discussed the relationship between wildfire and agriculture, the historical context of agricultural wildland-urban interface (WUI) fires, and how producers can move forward in increasing resilience for themselves and their communities
+This was a final paper I worked on in ENV S 140 - Ecology and Management of Wildland Fire. In this paper, we discussed the relationship between wildfire and agriculture, the historical context of agricultural wildland-urban interface (WUI) fires, and how producers can move forward in increasing resilience for themselves and their communities.
 
 <object data="ENV S 140 - Final Paper.pdf" type="application/pdf" width="100%" height="600px">
 <p>It appears your browser doesn't support embedded PDFs. 

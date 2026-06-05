@@ -26,9 +26,9 @@ These are some photo galleries of the life around UCSB. I find it fun and intere
 # Plants
 
 ::: {layout-ncol=2}
-![Common sunflower *Helianthus annuus*](pictures/plant-photo-1.jpg){group="plant-gallery"}
+![Common sunflower, *Helianthus annuus*](pictures/plant-photo-1.jpg){group="plant-gallery"}
 
-![Bush sunflower *Encelia californica*](pictures/plant-photo-2.jpg){group="plant-gallery"}
+![Bush sunflower, *Encelia californica*](pictures/plant-photo-2.jpg){group="plant-gallery"}
 :::
 
 # Just IV things
